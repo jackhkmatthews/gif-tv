@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 
 app.use('/gifInfo', gifInfoRouter);
 
-app.listen(port, () => console.log('example app listening at port: ', port));
+app.listen(port, () => console.log('example app listening at port number: ', port));
