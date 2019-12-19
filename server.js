@@ -4,6 +4,8 @@ const gifInfoRouter = require('./config/gifInfo.router.js');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 app.use('/', express.static('public'));
 
 app.get('/', (req, res) => {
@@ -12,4 +14,4 @@ app.get('/', (req, res) => {
 
 app.use('/gifInfo', gifInfoRouter);
 
-app.listen(3000, () => console.log('example app listening at port 3000'));
+app.listen(port, () => console.log('example app listening at port: ', port));
