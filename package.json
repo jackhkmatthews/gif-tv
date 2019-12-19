@@ -17,7 +17,7 @@
     "watch": "parallelshell 'npm run watch:html' 'npm run watch:css' 'npm run watch:js' 'npm run watch:assets'",
     "serve": "node server.js",
     "clean": "rm -rf public/",
-    "start": "npm run build && npm run serve"
+    "start": "npm run serve"
   },
   "author": "",
   "license": "ISC",
